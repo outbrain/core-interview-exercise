@@ -1,12 +1,12 @@
 # Core Service Exercise 
 Please read the following instructions before starting to implement your exercise, you don't want to miss any important instruction.
 
-### Creating your repository. 
+### Creating your repository 
 
 Please mirror this git repo using the instructions [here](https://help.github.com/articles/duplicating-a-repository). Then clone it locally. 
 (**Please DO NOT fork the repo**)
 
-### Submitting your solution.
+### Submitting your solution
 
 You may use any coding language (bash is **NOT** a coding language).
 
