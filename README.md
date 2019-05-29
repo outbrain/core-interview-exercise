@@ -10,7 +10,7 @@ Please mirror this git repo using the instructions [here](https://help.github.co
 
 You may use any coding language (bash is **NOT** a coding language).
 
-The exercise should be delivered as a GitHub Pull-Request to **YOUR DUPLICATED REPO**, containing:  
+The exercise should be delivered as a GitHub Pull-Request (Instructions can be found [here](https://help.github.com/en/articles/creating-a-pull-request)) to **YOUR DUPLICATED REPO**, containing:  
 1. OutRain utility.
 2. OutOfDrives utility. 
 3. Basic instructions.
