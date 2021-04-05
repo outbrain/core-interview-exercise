@@ -10,17 +10,22 @@ Please mirror this git repo using the instructions [here](https://help.github.co
 
 You may use one of the following coding languages: Python/Ruby.
 
-The exercise should be delivered as a GitHub Pull-Request (Instructions can be found [here](https://help.github.com/en/articles/creating-a-pull-request)) to **YOUR DUPLICATED REPO**, containing:  
-1. Directory containing all the modules of your service (providing a clear directory tree is an advantage).
+The exercise should be delivered as a GitHub repository in your private account, containing:
+1. Directory with all the modules of your service (providing a clear directory tree is an advantage).
 2. Dockerfile that runs the web framwork and copies the code to the container.
 3. Basic instructions on how to use the Dockerfile and examples for querying the service.
 
-Clarifications:
-1. The service should be started by the Dockerfile and should print all logs/output to the container's shell
+Requirments:
+1. The service should be started by the Dockerfile and should print all logs/output to the container's shell.
+
+Nice to have:
+1. Pay attention to your code structure and organization in classes, functions and modules. Naming convention will also be taken into consideration.
+2. We will be looking at you commit history. A tidy commit history is an advantage.
 
 
 ### Exercise
 Write a small API service that will expose the following routes:
+
 ~~~
 /v1/api/checkCurrentWeather
 /v1/api/checkCityWeather?city=Tel-aviv
@@ -35,7 +40,7 @@ This endpoint will check your location according to your IP, then check the curr
 * You can get the location according to the IP via this service: http://ipinfo.io/ 
 * You can fetch the weather information for a given location via this service: https://openweathermap.org/current. We will provide you with an API key.
 
-Example output:
+##### Response example
 
 ~~~
 {"city": "Tel-Aviv", "country": "IL", "degrees": 30}
@@ -48,15 +53,17 @@ This endpoint will check the current weather at a specific location passed as a 
 * Degrees should be shown in Celsius.
 * You can fetch the weather information for a given location via this service: https://openweathermap.org/current. We will provide you with an API key.
 
-Example output:
+##### Response example
 
 ~~~
 {"city": "Haifa", "country": "IL", "degrees": 26}
 ~~~
 
 #### driveStatus
-This endpoint will receive as body the structure defined in input.json, and will parse the data to return only the devices in the provided status (defined as a query parameter).
-The response should be in the following format:
+This endpoint will receive as body the data defined in [input.json](https://github.com/outbrain/core-interview-exercise/blob/new_exercise/input.json), and will parse the data to return only the drives in the provided status (defined as a query parameter).
+
+##### Response example
+
 ```
 {
   "message": "Found 1 offline drives",
@@ -76,5 +83,5 @@ The response should be in the following format:
   ]
 ```
 
-* You can add a validation to catch when a status is not available in the input.json and return a proper message (the data should be an empty list).
-* In the input file, each key is a device and each value is a string representing the device's information.
+* In cases where the value of the `status` query param is not found in the body, return a proper message and an empty data list.
+* In the input file, each key is a drive and each value is a string representing the drive's information.
