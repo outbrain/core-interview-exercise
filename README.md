@@ -27,9 +27,10 @@ Nice to have:
 Write a small API service that will expose the following routes:
 
 ~~~
-/v1/api/checkCurrentWeather
-/v1/api/checkCityWeather?city=Tel-aviv
-/v1/api/driveStatus?status=Offline
+GET  /v1/api/checkCurrentWeather
+GET  /v1/api/checkCityWeather?city=Tel-aviv
+POST /v1/api/driveStatus
+GET  /v1/api/driveStatus?status=Offline
 ~~~
 
 #### checkCurrentWeather
@@ -60,7 +61,16 @@ This endpoint will check the current weather at a specific location passed as a 
 ~~~
 
 #### driveStatus
-This endpoint will receive as body the data defined in [input.json](https://github.com/outbrain/core-interview-exercise/blob/new_exercise/input.json), and will parse the data to return only the drives in the provided status (defined as a query parameter).
+This endpoint has two available HTTP methods, one for updating the data on the service and one for quering it.
+
+The **POST** endpoint will receive as body the data defined in [input.json](https://github.com/outbrain/core-interview-exercise/blob/master/input.txt), and will save it to a local non-consistent file inside the container(when deleting and re-running the container, the file should not be there).
+The file should be overwritten with each call (no need to append).
+
+The response should be in the following format: `{"message": "success|failure"}`
+
+* Bonus: you can add the exception you get in case of a failure to the message. 
+
+The **GET** endpoint will receive as query parameter the status to filter the data by and will parse the data in the local file to return only the drives in the provided status.
 
 ##### Response example
 
