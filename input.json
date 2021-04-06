@@ -1,0 +1,11 @@
+{
+  "SP 0": "name SP1, status Offline, size 4764771 MB, free 2406182 MB, path /dev/sdb, log 230 MB, port 5660, guid a48134c00cda2c37005b30b0e40e3ed6, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdb /dev/sdc /dev/sdd, dare 0",
+  "SP 1": "name SP2, status Online, size 4764771 MB, free 2576353 MB, path /dev/sde, log 210 MB, port 5660, guid 7478a0141b7b9b0d005b30b0e60f3c4d, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sde /dev/sdf /dev/sdg, dare 0",
+  "SP 2": "name SP3, status Online, size 4764771 MB, free 2508201 MB, path /dev/sdh, log 10 MB, port 5660, guid 3014abf0047ceb5e005b30b0e902b6ea, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdh /dev/sdi /dev/sdj, dare 0",
+  "SP 3": "name SP4, status Offline, size 4764771 MB, free 2333948 MB, path /dev/sdk, log 0 MB, port 5660, guid db53cc9f02524622005b30b0eb0947e3, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdk /dev/sdl /dev/sdm, dare 1",
+  "SP 4": "name SP6, status Online, size 4764771 MB, free 2234697 MB, path /dev/sdq, log 100 MB, port 5660, guid fd6bfad779a9a3b7005b30b0f0014918, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdq /dev/sdr /dev/sds, dare 0",
+  "SP 5": "name SP10,status  Online, size 4764771 MB, free 2856456 MB, path /dev/sdt, log 200 MB, port 5660, guid 5088942bcf330adf005b542c5e01bfbd, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdt /dev/sdu /dev/sdv, dare 0",
+  "SP 6": "name SP12,status  Online, size 4764771 MB, free 2578329 MB, path /dev/sdn, log 239 MB, port 5660, guid a6bb97b6abb18e34005be7fd350c4d86, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdn /dev/sdo /dev/sdz, dare 0",
+  "SP 7": "name SP10,status  Offline, size 4764771 MB, free 2856456 MB, path /dev/sdt, log 200 MB, port 5660, guid 5088942bcf330adf005b542c5e01bfbd, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdt /dev/sdu /dev/sdv, dare 0",
+  "SP 8": "name SP12,status  Online, size 4764771 MB, free 2578329 MB, path /dev/sdn, log 239 MB, port 5660, guid a6bb97b6abb18e34005be7fd350c4d86, clusterUuid -8650609094877646407--116798096584060989, disks /dev/sdn /dev/sdo /dev/sdz, dare 1"
+}
