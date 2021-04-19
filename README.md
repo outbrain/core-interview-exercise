@@ -63,7 +63,7 @@ This endpoint will check the current weather at a specific location passed as a 
 #### driveStatus
 This endpoint has two available HTTP methods, one for updating the data on the service and one for quering it.
 
-The **POST** endpoint will receive as body the data defined in [input.json](https://github.com/outbrain/core-interview-exercise/blob/master/input.txt), and will save it to a local non-consistent file inside the container(when deleting and re-running the container, the file should not be there).
+The **POST** endpoint will receive as body the data defined in [input.json](https://github.com/outbrain/core-interview-exercise/blob/master/input.json), and will save it to a local non-consistent file inside the container(when deleting and re-running the container, the file should not be there).
 The file should be overwritten with each call (no need to append).
 
 The response should be in the following format: `{"message": "success|failure"}`
