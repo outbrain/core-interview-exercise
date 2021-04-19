@@ -28,9 +28,9 @@ Write a small API service that will expose the following routes:
 
 ~~~
 GET  /v1/api/checkCurrentWeather
-GET  /v1/api/checkCityWeather?city=Tel-aviv
+GET  /v1/api/checkCityWeather?city=<city_name>
 POST /v1/api/driveStatus
-GET  /v1/api/driveStatus?status=Offline
+GET  /v1/api/driveStatus?status=<drive_status>
 ~~~
 
 #### checkCurrentWeather
