@@ -1,4 +1,4 @@
-# Core Services Exercise
+# OutRain Exercise
 Please read the following instructions before starting to implement your exercise, you don't want to miss any important instruction.
 
 ### Creating your repository 
@@ -7,7 +7,6 @@ Please mirror this git repo using the instructions [here](https://help.github.co
 (**Please DO NOT fork the repo**)
 
 ### Submitting your solution
-
 You may use one of the following coding languages: Python/Ruby.
 
 The exercise should be delivered as a GitHub repository in your private account, containing:
