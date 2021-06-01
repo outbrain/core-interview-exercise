@@ -20,7 +20,7 @@ The exercise should be delivered as a GitHub repository in your private account,
 3. Vagrantfile that spawns the Consul server.
 4. Basic instructions on how to use the Dockerfile and Vagrantfile, and examples for querying the service.
 
-Requirments:
+Requirements:
 1. The API service that you build should be started by the Dockerfile and should print all logs/output to the container's shell.
 2. Use [Vagrant](https://www.vagrantup.com/intro/index.html) & [VirtualBox](https://www.virtualbox.org/) to build your Virtual Machine.
 3. `vagrant up` command should also start the Consul agent (it's ok if Consul will not run as a service).
@@ -28,11 +28,11 @@ Requirments:
 
 Nice to have:
 1. Pay attention to your code structure and organization in classes, functions and modules. Naming convention will also be taken into consideration.
-2. We will be looking at you commit history. A tidy commit history is an advantage.
+2. We will be looking at your commit history. A tidy commit history is an advantage.
 3. Register a Consul service on the VM (using a flat file).
-3. Wrap and run Consul as s service.
+3. Wrap and run Consul as a service.
 
-### Environment Requirments
+### Environment Requirements
 - 1 small VM (1 vCPU, 1G memory) running Ubuntu, has Consul server installed.
 
 ### Exercise
@@ -50,7 +50,7 @@ GET  /v1/api/consulCluster/systemInfo
 
 #### status
 This endpoint will sample the Consul server API to see if it is available or not, and will return the result in the following format:
-`{"status": 0|1, "message": "<message>"}
+`{"status": 0|1, "message": "<message>"}`
 
 Where:
 * Status 0 means down and 1 means up
@@ -70,7 +70,7 @@ This endpoint will sample the Consul API to get the following information about 
  - Number of registered nodes
  - Number of registered services
  - Cluster Leader IP and port
- - The internal protocaol version used by Consul
+ - The internal protocol version used by Consul
 
 ~~~
 {

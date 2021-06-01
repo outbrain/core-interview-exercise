@@ -10,7 +10,7 @@ Please mirror this git repo using the instructions [here](https://help.github.co
 The solutin should be delivered in a new branch in **YOUR DUPLICATED REPO**.
 
 In Outbrain's cloud platform group we embraced automation as one of our values.
-To be able to test our automation and changes before they are applyed in production, we use [Vagrant](https://www.vagrantup.com/intro/index.html) & [VirtualBox](https://www.virtualbox.org/) as our local virtual environment installed on our laptops.
+To be able to test our automation and changes before they are applied in production, we use [Vagrant](https://www.vagrantup.com/intro/index.html) & [VirtualBox](https://www.virtualbox.org/) as our local virtual environment installed on our laptops.
 
 We use [Consul](https://www.consul.io/docs/index.html) as our service discovery platform. All of our services rely on Consul to communicate with one another, so each change must be tested and reviewed on a test environment that mimics production, before deploying the change.
 Your assignment is to build such a test environment.
