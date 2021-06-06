@@ -8,7 +8,7 @@ Please mirror this git repo using the instructions [here](https://help.github.co
 
 ### Exercise
 This exercise includes two main parts:
-1. Building a Consul server and exposing Consul API
+1. Building a [Consul](https://www.consul.io) server and exposing Consul API
 2. Building an API service that exposes some endpoints
 
 ### Submitting your solution
