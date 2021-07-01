@@ -109,7 +109,7 @@ This endpoint will sample the Consul API to get the list of registered nodes in 
 ~~~
 
 #### systemInfo
-This endpoint will expose metrics taken from the VM OS. Here we wish to see which system metrics you think are relevant when it comes to debugging OS.
+This endpoint will expose metrics taken from the docker container. Here we wish to see which system metrics you think are relevant when it comes to debugging OS.
 The result must include the number of cores and amount of memory that the VM has. Try to come up with at least 5 more system metrics.
 Result should be in the following format: 
 
