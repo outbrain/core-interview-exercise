@@ -1,5 +1,5 @@
 # Consul-API Exercise
-Please read the following instructions before starting to implement your exercise, you don't want to miss any important instruction.
+**Please read the following instructions before starting to implement your exercise, you don't want to miss any important instruction.**
 
 ### Creating your repository 
 
@@ -25,15 +25,17 @@ Requirements:
 2. Use [Vagrant](https://www.vagrantup.com/intro/index.html) & [VirtualBox](https://www.virtualbox.org/) to build your Virtual Machine.
 3. `vagrant up` command should also start the Consul agent (it's ok if Consul will not run as a service).
 4. Consul UI should be accessible from your laptop's browser.
+5. As a sanity check for you Consul environment, make sure that the Consul cluster is functioning well with a known leader.
 
 Nice to have:
 1. Pay attention to your code structure and organization in classes, functions and modules. Naming convention will also be taken into consideration.
 2. We will be looking at your commit history. A tidy commit history is an advantage.
-3. Register a Consul service on the VM (using a flat file).
+3. Register a Consul service on the VM (using a flat file). If you choose to deploy one, make sure you are able to change its state (critical, healthy, warning).
 3. Wrap and run Consul as a service.
 
 ### Environment Requirements
 - 1 small VM (1 vCPU, 1G memory) running Ubuntu, has Consul server installed.
+- A functioning Consul cluster with known leader.
 
 ### Exercise
 1. Create the Consul server VM with proper configuration file.
