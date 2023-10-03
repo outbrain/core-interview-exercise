@@ -16,7 +16,7 @@ You may use one of the following coding languages: Python/Ruby.
 
 The exercise should be delivered as a GitHub repository in your private account, containing:
 1. Directory with all the modules of your service (providing a clear directory tree is an advantage).
-2. Dockerfile that runs the web framwork and copies the code to the container.
+2. Dockerfile that runs the web framework and copies the code to the container.
 3. Vagrantfile that spawns the Consul server.
 4. Basic instructions on how to use the Dockerfile and Vagrantfile, and examples for querying the service.
 
@@ -29,17 +29,18 @@ Requirements:
 
 Nice to have:
 1. Pay attention to your code structure and organization in classes, functions and modules. Naming convention will also be taken into consideration.
-2. We will be looking at your commit history. A tidy commit history is an advantage.
+2. We will be looking at your commit history. A meaningful and instructive commit history is an advantage.
 3. Register a Consul service on the VM (using a flat file). If you choose to deploy one, make sure you are able to change its state (critical, healthy, warning).
-3. Wrap and run Consul as a service.
+4. Wrap and run Consul as a service.
 
 ### Environment Requirements
 - 1 small VM (1 vCPU, 1G memory) running Ubuntu, has Consul server installed.
 - A functioning Consul cluster with known leader.
+- A Docker container that runs the API application, independently outside the VM. 
 
 ### Exercise
 1. Create the Consul server VM with proper configuration file.
-   The server's API should be accessiable from your laptop to move on to the next step.
+   The server's API should be accessible from your laptop to move on to the next step.
 
 2. Write a small API service that will expose the following routes:
 
@@ -68,7 +69,7 @@ Bonus:
 ~~~
 
 #### summary
-This endpoint will sample the Consul API to get the following information about the cluser:
+This endpoint will sample the Consul API to get the following information about the cluster:
  - Number of registered nodes
  - Number of registered services
  - Cluster Leader IP and port
